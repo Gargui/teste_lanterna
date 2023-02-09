@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <title>Lanterna</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-4">
+                        <h1 id="fl">Lanterna</h1>
+                    <div>
+                        <img src="./img/lanterna-desligada.png" alt="Lanterna" id='flashlight'>
+                    </div>
+                    <div>
+                        <button id='turnOn' class="btn btn-success">Ligar</button>
+                        <button id='turnOff' class="btn btn-danger">Desligar</button>
+                    </div>
+                    <br>
+                    <div id="myProgress">
+                        <div id="myBar">100%</div>
+                    </div>
+                   
+                <br>
+                <button onclick="rechargeLamp()" class="btn btn-primary">Recarregue</button>
+            </div>
+            </div> 
+        </div>
+
+    </main>
+    <script src="./lanterna.js"></script>
+</body>
+</html>
